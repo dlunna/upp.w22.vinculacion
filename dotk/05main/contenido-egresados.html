@@ -48,10 +48,23 @@
       <h1>Formatos</h1>
       <ul>
         <li><a href="./mc/egresados/ENCUESTA-DE-ACTUALIZACIÓN-2013-dic.doc">ENCUESTA DE ACTUALIZACIÓN 2013</a></li>
-        <li><a href="./mc/egresados/F-VI-SE-01-Encuesta-para-Egresados.doc">F-VI-SE-01 Encuesta para Egresados</a></li>
-        <li><a href="./mc/egresados/F-VI-SE-02-Act-de-Encuesta-Egresados.doc">F-VI-SE-02 Act de Encuesta Egresados</a></li>
-        <li><a href="./mc/egresados/F-VI-SE-03-Encuesta-Posgrado.docx">F-VI-SE-03 Encuesta Posgrado</a></li>
-        <li><a href="./mc/egresados/F-VI-SE-04-Encuesta-Para-Empleadores-1.docx">F-VI-SE-04 Encuesta Para Empleadores (1)</a></li>
+        <?php
+          if ($vedae == 0) {
+            echo '
+            <li><a href="./mc/egresados/F-VI-SE-01-Encuesta-para-Egresados.doc">F-VI-SE-01 Encuesta para Egresados</a></li>
+            <li><a href="./mc/egresados/F-VI-SE-02-Act-de-Encuesta-Egresados.doc">F-VI-SE-02 Act de Encuesta Egresados</a></li>
+            <li><a href="./mc/egresados/F-VI-SE-03-Encuesta-Posgrado.docx">F-VI-SE-03 Encuesta Posgrado</a></li>
+            <li><a href="./mc/egresados/F-VI-SE-04-Encuesta-Para-Empleadores-1.docx">F-VI-SE-04 Encuesta Para Empleadores (1)</a></li>
+            ';
+          } else {
+            echo '
+            <li><a href="./mc/egresados/F-VI-SE-01-Encuesta-para-Egresados_VEDA.doc">F-VI-SE-01-Encuesta-para-Egresados_VEDA.doc</a></li>
+            <li><a href="./mc/egresados/F-VI-SE-02-Act-de-Encuesta-Egresados_VEDA.doc">F-VI-SE-02-Act-de-Encuesta-Egresados_VEDA.doc</a></li>
+            <li><a href="./mc/egresados/F-VI-SE-03-Encuesta-Posgrado_VEDA.docx">F-VI-SE-03-Encuesta-Posgrado_VEDA.docx</a></li>
+            <li><a href="./mc/egresados/F-VI-SE-04-Encuesta-Para-Empleadores_VEDA.docx">F-VI-SE-04-Encuesta-Para-Empleadores_VEDA.docx</a></li>
+            ';
+          }
+        ?>
       </ul>
 
 
