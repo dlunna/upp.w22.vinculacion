@@ -18,8 +18,9 @@
     <!-- Logos e imagen de hidalgo -->
     <?php
     //include ('../lib18/seph/hf/header.html');
-  	 	include ('../lib20/hgo/header.html');
+  	//include ('../lib20/hgo/header.html');
   	?>
+    <?php include ('../lib20/hgo/veda_navbar.html'); ?>
     <!-- Slider principal -->
     <?php include ('./dotk/01header/01carousel-principal/carousel.html'); ?>
   </header>
@@ -41,12 +42,13 @@
   <footer>
     <!-- footer de gobierno del estado -->
     <?php //include ('../lib20/seph/hf/footer.html'); ?>
-    <?php include ('../lib20/hgo/footer.html'); ?>
+    <?php //include ('../lib20/hgo/footer.html'); ?>
+    <?php include ('../lib20/hgo/veda_footer.html'); ?>
   </footer>
 
   <?php
     include ('../lib20/core/80js.html');
-    include ('../lib20/hgo/zoram_js_footer.html');
+    //include ('../lib20/hgo/zoram_js_footer.html');
   ?>
 
   <!-- Script para dar la animacion al boton flotante que lleva arriba
